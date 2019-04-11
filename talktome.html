@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stew From The Lou</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Art, Photography, and Design by Renee Steward">
+        <meta name="keywords" content="Art, Photography, Design, Renee Steward">
+        <meta name="author" content="R. Steward">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            * {
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-font-smoothing:antialiased;
+                -moz-font-smoothing:antialiased;
+                -o-font-smoothing:antialiased;
+                text-rendering:optimizeLegibility;
+            }
+            
+            body {
+                font-family: 'Noto Sans', sans-serif;
+                font-weight:300;
+                font-size: 12px;
+                line-height:30px;
+                color:#777;
+            }
+            
+            .container {
+                max-width:400px;
+                width:100%;
+                margin:0 auto;
+                position:relative;
+            }
+            
+            #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+            
+            #contact {
+                background:#F9F9F9;
+                padding:25px;
+                margin:50px 0;
+            }
+            
+            #contact h3 {
+                color: #A0CDB6;
+                display: block;
+                font-size: 30px;
+                font-weight: 400;
+            }
+            
+            #contact h4 {
+                margin:5px 0 15px;
+                display:block;
+                font-size:13px;
+            }
+            
+            fieldset {
+                border: medium none !important;
+                margin: 0 0 10px;
+                min-width: 100%;
+                padding: 0;
+                width: 100%;
+            }
+            
+            #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+                width:100%;
+                border:1px solid #CCC;
+                background:#FFF;
+                margin:0 0 5px;
+                padding:10px;
+            }
+            
+            #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+                -webkit-transition:border-color 0.3s ease-in-out;
+                -moz-transition:border-color 0.3s ease-in-out;
+                transition:border-color 0.3s ease-in-out;
+                border:1px solid #AAA;
+            }
+            
+            #contact textarea {
+                height:100px;
+                max-width:100%;
+            resize:none;
+            }
+            
+            #contact button[type="submit"] {
+                cursor:pointer;
+                width:100%;
+                border:none;
+                background:#A0CDB6;
+                color:#FFF;
+                margin:0 0 5px;
+                padding:10px;
+                font-size:15px;
+            }
+            
+            #contact button[type="submit"]:hover {
+                background:#A0CDB6;
+                -webkit-transition:background 0.3s ease-in-out;
+                -moz-transition:background 0.3s ease-in-out;
+                transition:background-color 0.3s ease-in-out;
+            }
+            
+            #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+            
+            #contact input:focus, #contact textarea:focus {
+                outline:0;
+                border:1px solid #999;
+            }
+            ::-webkit-input-placeholder {
+            color:#A0CDB6;
+            }
+            :-moz-placeholder {
+            color:#A0CDB6;
+            }
+            ::-moz-placeholder {
+            color:#A0CDB6;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="headstruct">
+            <div id="logo">
+                <img src="img/stewlogo.svg" alt="Stew From The Lou logo" width="100%">
+            </div>
+            <div id="social">
+                <div><a href="https://www.instagram.com/stewfromthelou"><img src="img/instagram.svg" alt="instagram link"></a></div>
+                <div><a href="https://www.instagram.com/stewdoesart"><img src="img/instagram.svg" alt="instagram link"></a></div>
+                <div><a href="https://www.linkedin.com/in/renee-steward-031a7ab7"><img src="img/linkedin.svg" alt="linked in link"></a></div>
+            </div>
+            <nav id="navstruct">
+                <ul class="listruct">
+                    <li class="hover1"><a href="home.html">Home</a></li>
+                    <li class="hover2"><a href="whoiam.html">Who I am</a></li>
+                    <li class="hover3"><a href="whatido.html">What I do</a></li>
+                    <li class="hover4"><a href="talktome.html">Talk To Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+              <h3>Shout Me A Holler</h3>
+              <h4>Let's have a conversation. Or work together.</h4>
+              <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+            </form>
+           
+            
+          </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+
+    </body>

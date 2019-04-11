@@ -1,0 +1,232 @@
+@font-face{
+    font-family: 'yearsoldfont';
+    src: url('fonts/5yearsoldfont/5yearsoldfont.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
+
+
+/*main style*/
+#headstruct{
+    width: 100%;
+    height: 200px;
+}
+#logo{
+    width: 120px;
+    height: 100px;
+    float: left;
+    padding-left: 1.5%;
+}
+#social{
+    width: 10%;
+    float: right;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+}
+
+#social > div{
+    width:30%;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+
+}
+#icons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#navstruct{
+    float: right;
+    width:100%;
+    height: 70px;
+}
+
+.listruct{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'yearsoldfont';
+    font-size: 33px;
+}
+
+.listruct li a{
+    display:block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration:none;
+    float: left;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+a:visited{
+    color: black;
+}
+
+.hover1 a:hover{
+    color: #A7D6E8;
+}
+.hover2 a:hover{
+    color: #7D63A2;
+}
+.hover3 a:hover{
+    color: #00A4BF;
+}
+.hover4 a:hover{
+    color: #A0CDB6;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 650px;
+}
+
+#container>img{
+    width: 90%;
+    padding-left: 50px;
+    margin: auto;
+}
+
+h1{
+  font-family: 'yearsoldfont';
+  font-size: 30px;
+}
+
+h2{
+    font-family: 'yearsoldfont';
+    font-size: 28px;
+}
+
+h3{
+    font-family: 'yearsoldfont';
+    font-size: 26px;
+}
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*img gallery style*/
+#columns {
+  column-width: 320px;
+  column-gap: 15px;
+   width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+div#columns figure {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+}
+
+div#columns figure img {
+  width: 100%; height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  font-family: 'yearsoldfont';
+  font-size: .9rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+div#columns small { 
+  font-size: 1rem;
+  float: right; 
+  text-transform: uppercase;
+  color: #aaa;
+} 
+
+div#columns small a { 
+  color: #666; 
+  text-decoration: none; 
+  transition: .4s color;
+}
+
+div#columns:hover figure:not(:hover) {
+  opacity:  0.4;
+}
+
+@media screen and (max-width: 750px) { 
+#columns { column-gap: 0px; }
+#columns figure { width: 100%; }
+}
+
+/* home page slider*/
+#slider {
+    position: fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    
+}
+#slider .slide {
+    width: 50%;
+    height: 100%;
+    float: left;
+    opacity: 0;
+    padding-top:20%;
+    text-align: center;
+    font-size: 7em;
+    transition: width .5s, opacity .7s,font-size .5s;
+}
+#slider .slide:nth-child(odd){
+    background: #7d63a2;
+}
+#slider .slide:nth-child(even){
+    background: #00A4BF
+}
+.slider>a:visited{
+    text-decoration: none;
+    color:black;
+}
+#slider:hover .slide {
+    width: 30%;
+    opacity:0;
+    font-size: 4em;
+    transition: width .5s, opacity .7s,font-size .5s,font-weight .6s,;
+    color: black;
+
+    
+}
+#slider .slide:hover {
+    width: 70%;
+    opacity:.7 ;
+    font-weight: 700;
+    font-size:10em;
+    transition: width .5s, opacity .7s,font-size .5s,font-weight .6s,;
+      
+}
+
+
+.bg {
+    /* The image used */
+    background-image: url("img/homepage-01.svg");
+  
+    /* Full height */
+    height: 200%; 
+  
+    /* Center and scale the image nicely */
+    background-position: fixed;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
